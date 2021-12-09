@@ -1,4 +1,4 @@
-﻿using MelonLoader;
+using MelonLoader;
 using Assets.Scripts.Simulation;
 
 [assembly: MelonInfo(typeof(Main.Main), "Add Cash at End of Round", "1.0.0", "Roshi617")]
@@ -22,7 +22,6 @@ namespace Main
 			Simulation.CashIncreaseReason test = Simulation.CashIncreaseReason.RoundBonus;
 			double increaseCashAmount = 1000.0; //change this to your liking
 			return __instance.IncreaseCash(increaseCashAmount, test);
-			
 		}
 
 		public override void OnApplicationStart()
@@ -40,7 +39,7 @@ namespace Main
 			public static void PostFix(Simulation __instance)
 			{
 				cashIncrease(__instance);
-            }
+      }
 		}
 	}
 }
