@@ -20,7 +20,7 @@ namespace Main
 		public static double cashIncrease(Simulation __instance)
 		{
 			Simulation.CashIncreaseReason test = Simulation.CashIncreaseReason.RoundBonus;
-			double increaseCashAmount = 1000.0; //change this to your liking
+			double increaseCashAmount = 3000.0; //change this to your liking
 			return __instance.IncreaseCash(increaseCashAmount, test);
 		}
 
@@ -28,7 +28,7 @@ namespace Main
 		{
 			base.OnApplicationStart();
 
-			// MelonLogger.Msg("1000 Bonus End of Round Cash Mod Loaded!");
+			// MelonLogger.Msg("3000 Bonus End of Round Cash Mod Loaded!");
 			// MelonLogger.Msg("Created by Roshi617. Meant to be used with Bloons Adventure Time TD.");
 		}
 
